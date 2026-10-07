@@ -1,4 +1,6 @@
-/* CONFIGURAÇÕES GERAIS */
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
 
 * {
     margin: 0;
@@ -18,294 +20,269 @@ body {
 }
 
 
-/* CABEÇALHO */
+/* =========================
+   CABEÇALHO
+========================= */
 
-header {
+.cabecalho {
     background-color: #181818;
     color: white;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1.2rem 8%;
 }
 
-.logo h2 {
+.cabecalho__titulo {
     font-size: 1.5rem;
 }
 
-
-/* MENU COM FLEXBOX */
-
-nav {
+.cabecalho__menu {
     display: flex;
     gap: 2rem;
 }
 
-nav a {
+.cabecalho__link {
     color: white;
     text-decoration: none;
     font-size: 1rem;
 }
 
-nav a:hover {
+.cabecalho__link:hover {
     color: #00bcd4;
 }
 
 
-/* HOME */
+/* =========================
+   HOME
+========================= */
 
 .home {
     min-height: 85vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     padding: 5%;
-
-    background: linear-gradient(
-        135deg,
-        #00bcd4,
-        #673ab7
-    );
-
+    background: linear-gradient(135deg, #00bcd4, #673ab7);
     color: white;
 }
 
-.home-conteudo {
+.home__conteudo {
     width: 90%;
     max-width: 50rem;
 }
 
-.home h1 {
+.home__titulo {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.home p {
+.home__texto {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-.botao {
+.home__botao {
     display: inline-block;
-
     background-color: white;
     color: #333;
-
     padding: 0.8em 1.5em;
-
     border-radius: 0.5rem;
-
     text-decoration: none;
     font-weight: bold;
 }
 
-.botao:hover {
+.home__botao:hover {
     background-color: #eeeeee;
 }
 
 
-/* SEÇÕES */
+/* =========================
+   SEÇÕES
+========================= */
 
 .secao {
     width: 85%;
     max-width: 70rem;
-
     margin: auto;
-
     padding: 5rem 0;
 }
 
-.secao h2 {
+.secao__titulo {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
-.secao > p {
+.secao__texto {
     margin-bottom: 1rem;
     text-align: center;
 }
 
 
-/* SERVIÇOS COM CSS GRID */
+/* =========================
+   SERVIÇOS
+========================= */
 
-.servicos-grid {
+.servicos__grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(15rem, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 2rem;
 }
 
-.card {
+.servicos__card {
     background-color: white;
-
     padding: 2rem;
-
     border-radius: 0.7rem;
-
-    box-shadow: 0 0.2rem 0.8rem
-        rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
 }
 
-.card h3 {
+.servicos__card-titulo {
     margin-bottom: 1rem;
     color: #673ab7;
 }
 
 
-/* DEPOIMENTOS */
+/* =========================
+   DEPOIMENTOS
+========================= */
 
-.depoimentos {
+.depoimentos__lista {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
-.depoimento {
+.depoimentos__item {
     flex: 1 1 15rem;
-
     background-color: white;
-
     padding: 2rem;
-
     border-radius: 0.7rem;
-
-    box-shadow: 0 0.2rem 0.8rem
-        rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
 }
 
-.depoimento p {
+.depoimentos__texto {
     margin-bottom: 1rem;
 }
 
 
-/* CONTATO */
+/* =========================
+   CONTATO
+========================= */
 
-.contato-container {
+.contato__container {
     display: flex;
     gap: 3rem;
 }
 
-.informacoes,
-form {
+.contato__informacoes,
+.contato__formulario {
     flex: 1;
 }
 
-.informacoes h3 {
+.contato__subtitulo {
     margin-bottom: 1rem;
 }
 
-.informacoes p {
+.contato__texto {
     margin-bottom: 1rem;
 }
 
 
-/* FORMULÁRIO */
+/* =========================
+   FORMULÁRIO
+========================= */
 
-form {
+.contato__formulario {
     display: flex;
     flex-direction: column;
 }
 
-form label {
+.contato__label {
     margin-top: 1rem;
     margin-bottom: 0.3rem;
 }
 
-input,
-textarea {
+.contato__campo {
     width: 100%;
-
     padding: 0.8rem;
-
     border: 0.1rem solid #ccc;
-
     border-radius: 0.4rem;
-
     font-size: 1rem;
 }
 
-textarea {
+.contato__campo--mensagem {
     min-height: 10rem;
     resize: vertical;
 }
 
-button {
+.contato__botao {
     margin-top: 1rem;
-
     padding: 0.9rem;
-
     border: none;
-
     border-radius: 0.4rem;
-
     background-color: #673ab7;
     color: white;
-
     font-size: 1rem;
-
     cursor: pointer;
 }
 
-button:hover {
+.contato__botao:hover {
     background-color: #512da8;
 }
 
 
-/* RODAPÉ */
+/* =========================
+   RODAPÉ
+========================= */
 
-footer {
+.rodape {
     background-color: #181818;
     color: white;
-
     text-align: center;
-
     padding: 2rem 5%;
 }
 
 
-/* RESPONSIVIDADE - TABLETS */
+/* =========================
+   RESPONSIVIDADE - TABLETS
+========================= */
 
 @media (max-width: 48rem) {
 
-    header {
+    .cabecalho {
         flex-direction: column;
         gap: 1rem;
     }
 
-    nav {
+    .cabecalho__menu {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
     }
 
-    .home h1 {
+    .home__titulo {
         font-size: 2.3rem;
     }
 
-    .contato-container {
+    .contato__container {
         flex-direction: column;
     }
 }
 
 
-/* RESPONSIVIDADE - CELULARES */
+/* =========================
+   RESPONSIVIDADE - CELULARES
+========================= */
 
 @media (max-width: 30rem) {
 
-    header {
+    .cabecalho {
         padding: 1rem 5%;
     }
 
-    nav {
+    .cabecalho__menu {
         flex-direction: column;
         align-items: center;
     }
@@ -314,11 +291,11 @@ footer {
         min-height: 75vh;
     }
 
-    .home h1 {
+    .home__titulo {
         font-size: 1.8rem;
     }
 
-    .home p {
+    .home__texto {
         font-size: 1rem;
     }
 
@@ -327,15 +304,15 @@ footer {
         padding: 3rem 0;
     }
 
-    .secao h2 {
+    .secao__titulo {
         font-size: 1.7rem;
     }
 
-    .servicos-grid {
+    .servicos__grid {
         grid-template-columns: 1fr;
     }
 
-    .depoimentos {
+    .depoimentos__lista {
         flex-direction: column;
     }
 }
