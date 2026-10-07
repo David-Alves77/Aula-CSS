@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência Criativa Web</title>
-
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">
-            <h2>Agência Criativa Web</h2>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <h2 class="cabecalho__titulo">Agência Criativa Web</h2>
         </div>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#sobre">Sobre Nós</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#depoimentos">Depoimentos</a>
-            <a href="#contato">Contato</a>
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__link" href="#home">Home</a>
+            <a class="cabecalho__link" href="#sobre">Sobre Nós</a>
+            <a class="cabecalho__link" href="#servicos">Serviços</a>
+            <a class="cabecalho__link" href="#depoimentos">Depoimentos</a>
+            <a class="cabecalho__link" href="#contato">Contato</a>
         </nav>
     </header>
 
@@ -29,83 +28,87 @@
 
         <!-- HOME -->
         <section id="home" class="home">
-            <div class="home-conteudo">
-                <h1>Transformamos ideias em experiências digitais</h1>
+            <div class="home__conteudo">
+                <h1 class="home__titulo">
+                    Transformamos ideias em experiências digitais
+                </h1>
 
-                <p>
+                <p class="home__texto">
                     Criamos sites modernos, responsivos e personalizados
                     para destacar sua empresa no mundo digital.
                 </p>
 
-                <a href="#servicos" class="botao">Conheça nossos serviços</a>
+                <a href="#servicos" class="home__botao">
+                    Conheça nossos serviços
+                </a>
             </div>
         </section>
 
         <!-- SOBRE NÓS -->
-        <section id="sobre" class="secao">
-            <h2>Sobre Nós</h2>
+        <section id="sobre" class="secao sobre">
+            <h2 class="secao__titulo">Sobre Nós</h2>
 
-            <p>
+            <p class="secao__texto">
                 A Agência Criativa Web é uma agência de design digital
                 especializada na criação de soluções modernas para empresas
                 que desejam fortalecer sua presença na internet.
             </p>
 
-            <p>
+            <p class="secao__texto">
                 Valorizamos criatividade, inovação, qualidade e uma boa
                 experiência para nossos clientes e seus usuários.
             </p>
         </section>
 
         <!-- SERVIÇOS -->
-        <section id="servicos" class="secao">
-            <h2>Nossos Serviços</h2>
+        <section id="servicos" class="secao servicos">
+            <h2 class="secao__titulo">Nossos Serviços</h2>
 
-            <div class="servicos-grid">
+            <div class="servicos__grid">
 
-                <div class="card">
-                    <h3>Criação de Sites</h3>
-                    <p>
+                <div class="servicos__card">
+                    <h3 class="servicos__card-titulo">Criação de Sites</h3>
+                    <p class="servicos__card-texto">
                         Desenvolvemos sites modernos, rápidos e adaptados
                         para computadores, tablets e celulares.
                     </p>
                 </div>
 
-                <div class="card">
-                    <h3>Design Responsivo</h3>
-                    <p>
+                <div class="servicos__card">
+                    <h3 class="servicos__card-titulo">Design Responsivo</h3>
+                    <p class="servicos__card-texto">
                         Criamos interfaces que se adaptam automaticamente
                         aos diferentes tamanhos de tela.
                     </p>
                 </div>
 
-                <div class="card">
-                    <h3>Identidade Visual</h3>
-                    <p>
+                <div class="servicos__card">
+                    <h3 class="servicos__card-titulo">Identidade Visual</h3>
+                    <p class="servicos__card-texto">
                         Desenvolvemos elementos visuais para fortalecer
                         a identidade e a presença da sua marca.
                     </p>
                 </div>
 
-                <div class="card">
-                    <h3>UI/UX Design</h3>
-                    <p>
+                <div class="servicos__card">
+                    <h3 class="servicos__card-titulo">UI/UX Design</h3>
+                    <p class="servicos__card-texto">
                         Planejamos interfaces bonitas, intuitivas e fáceis
                         de utilizar.
                     </p>
                 </div>
 
-                <div class="card">
-                    <h3>Landing Pages</h3>
-                    <p>
+                <div class="servicos__card">
+                    <h3 class="servicos__card-titulo">Landing Pages</h3>
+                    <p class="servicos__card-texto">
                         Criamos páginas focadas em apresentar produtos,
                         serviços e gerar novos clientes.
                     </p>
                 </div>
 
-                <div class="card">
-                    <h3>Consultoria Digital</h3>
-                    <p>
+                <div class="servicos__card">
+                    <h3 class="servicos__card-titulo">Consultoria Digital</h3>
+                    <p class="servicos__card-texto">
                         Ajudamos empresas a melhorar sua presença e
                         estratégia no ambiente digital.
                     </p>
@@ -115,58 +118,68 @@
         </section>
 
         <!-- DEPOIMENTOS -->
-        <section id="depoimentos" class="secao">
-            <h2>Depoimentos</h2>
+        <section id="depoimentos" class="secao depoimentos">
+            <h2 class="secao__titulo">Depoimentos</h2>
 
-            <div class="depoimentos">
+            <div class="depoimentos__lista">
 
-                <div class="depoimento">
-                    <p>
+                <div class="depoimentos__item">
+                    <p class="depoimentos__texto">
                         "A Agência Criativa Web transformou completamente
                         o site da nossa empresa. O resultado ficou excelente!"
                     </p>
-
-                    <strong>— Mariana Silva</strong>
+                    <strong class="depoimentos__autor">— Mariana Silva</strong>
                 </div>
 
-                <div class="depoimento">
-                    <p>
+                <div class="depoimentos__item">
+                    <p class="depoimentos__texto">
                         "Atendimento excelente e um projeto moderno,
                         rápido e totalmente responsivo."
                     </p>
-
-                    <strong>— Lucas Oliveira</strong>
+                    <strong class="depoimentos__autor">— Lucas Oliveira</strong>
                 </div>
 
-                <div class="depoimento">
-                    <p>
+                <div class="depoimentos__item">
+                    <p class="depoimentos__texto">
                         "Nossa empresa ganhou uma presença digital muito
                         mais profissional depois do novo site."
                     </p>
-
-                    <strong>— Ana Souza</strong>
+                    <strong class="depoimentos__autor">— Ana Souza</strong>
                 </div>
 
             </div>
         </section>
 
         <!-- CONTATO -->
-        <section id="contato" class="secao">
-            <h2>Entre em Contato</h2>
+        <section id="contato" class="secao contato">
+            <h2 class="secao__titulo">Entre em Contato</h2>
 
-            <div class="contato-container">
+            <div class="contato__container">
 
-                <div class="informacoes">
-                    <h3>Informações</h3>
+                <div class="contato__informacoes">
+                    <h3 class="contato__subtitulo">Informações</h3>
 
-                    <p><strong>Endereço:</strong> Avenida Criativa, 100 - São Paulo</p>
-                    <p><strong>Telefone:</strong> (11) 99999-9999</p>
-                    <p><strong>E-mail:</strong> contato@agenciacriativa.com</p>
+                    <p class="contato__texto">
+                        <strong>Endereço:</strong>
+                        Avenida Criativa, 100 - São Paulo
+                    </p>
+
+                    <p class="contato__texto">
+                        <strong>Telefone:</strong>
+                        (11) 99999-9999
+                    </p>
+
+                    <p class="contato__texto">
+                        <strong>E-mail:</strong>
+                        contato@agenciacriativa.com
+                    </p>
                 </div>
 
-                <form>
-                    <label for="nome">Nome</label>
+                <form class="contato__formulario">
+
+                    <label class="contato__label" for="nome">Nome</label>
                     <input
+                        class="contato__campo"
                         type="text"
                         id="nome"
                         name="nome"
@@ -174,8 +187,9 @@
                         required
                     >
 
-                    <label for="email">E-mail</label>
+                    <label class="contato__label" for="email">E-mail</label>
                     <input
+                        class="contato__campo"
                         type="email"
                         id="email"
                         name="email"
@@ -183,15 +197,22 @@
                         required
                     >
 
-                    <label for="mensagem">Mensagem</label>
+                    <label class="contato__label" for="mensagem">
+                        Mensagem
+                    </label>
+
                     <textarea
+                        class="contato__campo contato__campo--mensagem"
                         id="mensagem"
                         name="mensagem"
                         placeholder="Digite sua mensagem"
                         required
                     ></textarea>
 
-                    <button type="submit">Enviar mensagem</button>
+                    <button class="contato__botao" type="submit">
+                        Enviar mensagem
+                    </button>
+
                 </form>
 
             </div>
@@ -199,10 +220,11 @@
 
     </main>
 
-    <footer>
-        <p>© 2026 Agência Criativa Web - Todos os direitos reservados.</p>
+    <footer class="rodape">
+        <p class="rodape__texto">
+            © 2026 Agência Criativa Web - Todos os direitos reservados.
+        </p>
     </footer>
 
 </body>
-
 </html>
