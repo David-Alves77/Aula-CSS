@@ -1,0 +1,140 @@
+
+@use "variaveis" as v;
+
+// CABEÇALHO
+.cabecalho {
+  background-color: v.$cor-cabecalho;
+  color: v.$cor-branca;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 8%;
+
+  &__titulo {
+    font-size: 1.5rem;
+  }
+
+  &__menu {
+    display: flex;
+    gap: v.$espacamento-medio;
+  }
+
+  &__link {
+    color: v.$cor-branca;
+    text-decoration: none;
+    font-size: 1rem;
+
+    &:hover {
+      color: v.$cor-secundaria;
+    }
+  }
+}
+
+// HOME
+.home {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+  background: linear-gradient(
+    135deg,
+    v.$cor-secundaria,
+    v.$cor-primaria
+  );
+  color: v.$cor-branca;
+
+  &__conteudo {
+    width: 90%;
+    max-width: 50rem;
+  }
+
+  &__titulo {
+    font-size: 3rem;
+    margin-bottom: v.$espacamento-base;
+  }
+
+  &__texto {
+    font-size: 1.2rem;
+    margin-bottom: v.$espacamento-medio;
+  }
+}
+
+// SEÇÕES
+.secao {
+  width: 85%;
+  max-width: 70rem;
+  margin: auto;
+  padding: 5rem 0;
+
+  &__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: v.$espacamento-medio;
+  }
+
+  &__texto {
+    margin-bottom: v.$espacamento-base;
+    text-align: center;
+  }
+}
+
+// RODAPÉ
+.rodape {
+  background-color: v.$cor-cabecalho;
+  color: v.$cor-branca;
+  text-align: center;
+  padding: v.$espacamento-medio 5%;
+}
+
+// RESPONSIVIDADE - TABLETS
+@media (max-width: 48rem) {
+  .cabecalho {
+    flex-direction: column;
+    gap: v.$espacamento-base;
+
+    &__menu {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: v.$espacamento-base;
+    }
+  }
+
+  .home__titulo {
+    font-size: 2.3rem;
+  }
+}
+
+// RESPONSIVIDADE - CELULARES
+@media (max-width: 30rem) {
+  .cabecalho {
+    padding: v.$espacamento-base 5%;
+
+    &__menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .home {
+    min-height: 75vh;
+
+    &__titulo {
+      font-size: 1.8rem;
+    }
+
+    &__texto {
+      font-size: 1rem;
+    }
+  }
+
+  .secao {
+    width: 90%;
+    padding: v.$espacamento-grande 0;
+
+    &__titulo {
+      font-size: 1.7rem;
+    }
+  }
+}
