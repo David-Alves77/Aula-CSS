@@ -1,318 +1,243 @@
-/* =========================
-   CONFIGURAÇÕES GERAIS
-========================= */
-
+@charset "UTF-8";
+/* Cores do projeto */
+/* Fontes */
+/* Espaçamentos */
+/* Bordas */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-/* =========================
-   CABEÇALHO
-========================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 .cabecalho {
-    background-color: #181818;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 8%;
+  background-color: #181818;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 8%;
 }
-
 .cabecalho__titulo {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-
 .cabecalho__menu {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
-
 .cabecalho__link {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
 }
-
 .cabecalho__link:hover {
-    color: #00bcd4;
+  color: #00bcd4;
 }
-
-
-/* =========================
-   HOME
-========================= */
 
 .home {
-    min-height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5%;
-    background: linear-gradient(135deg, #00bcd4, #673ab7);
-    color: white;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+  background: linear-gradient(135deg, #00bcd4, #673ab7);
+  color: #fff;
 }
-
 .home__conteudo {
-    width: 90%;
-    max-width: 50rem;
+  width: 90%;
+  max-width: 50rem;
 }
-
 .home__titulo {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
-
 .home__texto {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
-
-.home__botao {
-    display: inline-block;
-    background-color: white;
-    color: #333;
-    padding: 0.8em 1.5em;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.home__botao:hover {
-    background-color: #eeeeee;
-}
-
-
-/* =========================
-   SEÇÕES
-========================= */
 
 .secao {
-    width: 85%;
-    max-width: 70rem;
-    margin: auto;
-    padding: 5rem 0;
+  width: 85%;
+  max-width: 70rem;
+  margin: auto;
+  padding: 5rem 0;
 }
-
 .secao__titulo {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
-
 .secao__texto {
-    margin-bottom: 1rem;
-    text-align: center;
+  margin-bottom: 1rem;
+  text-align: center;
 }
-
-
-/* =========================
-   SERVIÇOS
-========================= */
-
-.servicos__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 2rem;
-}
-
-.servicos__card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 0.7rem;
-    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
-}
-
-.servicos__card-titulo {
-    margin-bottom: 1rem;
-    color: #673ab7;
-}
-
-
-/* =========================
-   DEPOIMENTOS
-========================= */
-
-.depoimentos__lista {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.depoimentos__item {
-    flex: 1 1 15rem;
-    background-color: white;
-    padding: 2rem;
-    border-radius: 0.7rem;
-    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
-}
-
-.depoimentos__texto {
-    margin-bottom: 1rem;
-}
-
-
-/* =========================
-   CONTATO
-========================= */
-
-.contato__container {
-    display: flex;
-    gap: 3rem;
-}
-
-.contato__informacoes,
-.contato__formulario {
-    flex: 1;
-}
-
-.contato__subtitulo {
-    margin-bottom: 1rem;
-}
-
-.contato__texto {
-    margin-bottom: 1rem;
-}
-
-
-/* =========================
-   FORMULÁRIO
-========================= */
-
-.contato__formulario {
-    display: flex;
-    flex-direction: column;
-}
-
-.contato__label {
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
-}
-
-.contato__campo {
-    width: 100%;
-    padding: 0.8rem;
-    border: 0.1rem solid #ccc;
-    border-radius: 0.4rem;
-    font-size: 1rem;
-}
-
-.contato__campo--mensagem {
-    min-height: 10rem;
-    resize: vertical;
-}
-
-.contato__botao {
-    margin-top: 1rem;
-    padding: 0.9rem;
-    border: none;
-    border-radius: 0.4rem;
-    background-color: #673ab7;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.contato__botao:hover {
-    background-color: #512da8;
-}
-
-
-/* =========================
-   RODAPÉ
-========================= */
 
 .rodape {
-    background-color: #181818;
-    color: white;
-    text-align: center;
-    padding: 2rem 5%;
+  background-color: #181818;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 5%;
 }
-
-
-/* =========================
-   RESPONSIVIDADE - TABLETS
-========================= */
 
 @media (max-width: 48rem) {
-
-    .cabecalho {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .cabecalho__menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .home__titulo {
-        font-size: 2.3rem;
-    }
-
-    .contato__container {
-        flex-direction: column;
-    }
+  .cabecalho {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cabecalho__menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .home__titulo {
+    font-size: 2.3rem;
+  }
 }
-
-
-/* =========================
-   RESPONSIVIDADE - CELULARES
-========================= */
-
 @media (max-width: 30rem) {
-
-    .cabecalho {
-        padding: 1rem 5%;
-    }
-
-    .cabecalho__menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .home {
-        min-height: 75vh;
-    }
-
-    .home__titulo {
-        font-size: 1.8rem;
-    }
-
-    .home__texto {
-        font-size: 1rem;
-    }
-
-    .secao {
-        width: 90%;
-        padding: 3rem 0;
-    }
-
-    .secao__titulo {
-        font-size: 1.7rem;
-    }
-
-    .servicos__grid {
-        grid-template-columns: 1fr;
-    }
-
-    .depoimentos__lista {
-        flex-direction: column;
-    }
+  .cabecalho {
+    padding: 1rem 5%;
+  }
+  .cabecalho__menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home {
+    min-height: 75vh;
+  }
+  .home__titulo {
+    font-size: 1.8rem;
+  }
+  .home__texto {
+    font-size: 1rem;
+  }
+  .secao {
+    width: 90%;
+    padding: 3rem 0;
+  }
+  .secao__titulo {
+    font-size: 1.7rem;
+  }
 }
+.home__botao {
+  background-color: #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  color: #333;
+  padding: 0.8em 1.5em;
+  font-weight: bold;
+}
+.home__botao:hover {
+  background-color: #eeeeee;
+}
+
+.servicos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+.servicos__card {
+  padding: 2rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+.servicos__card-titulo {
+  margin-bottom: 1rem;
+  color: #673ab7;
+}
+
+.depoimentos__lista {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.depoimentos__item {
+  flex: 1 1 15rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+.depoimentos__texto {
+  margin-bottom: 1rem;
+}
+
+.contato__container {
+  display: flex;
+  gap: 3rem;
+}
+.contato__informacoes, .contato__formulario {
+  flex: 1;
+}
+.contato__subtitulo, .contato__texto {
+  margin-bottom: 1rem;
+}
+.contato__formulario {
+  display: flex;
+  flex-direction: column;
+}
+.contato__label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+.contato__campo {
+  width: 100%;
+  padding: 0.8rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+.contato__campo--mensagem {
+  min-height: 10rem;
+  resize: vertical;
+}
+.contato__card {
+  padding: 2rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+.contato:hover {
+  background-color: #512da8;
+}
+
+@media (max-width: 48rem) {
+  .contato__container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 30rem) {
+  .servicos__grid {
+    grid-template-columns: 1fr;
+  }
+  .depoimentos__lista {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
