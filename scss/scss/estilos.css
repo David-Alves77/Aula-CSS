@@ -1,0 +1,39 @@
+/* CSS gerado a partir da estrutura SCSS da Agencia Criativa Web */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background-color:#f5f5f5;color:#333;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;height:auto;display:block}
+.cabecalho{background-color:#181818;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 8%}
+.cabecalho__titulo{font-size:1.5rem}
+.cabecalho__menu{display:flex;gap:2rem}
+.cabecalho__link{color:#fff;text-decoration:none;font-size:1rem}
+.cabecalho__link:hover{color:#00bcd4}
+.home{min-height:85vh;display:flex;justify-content:center;align-items:center;text-align:center;padding:5%;background:linear-gradient(135deg,#00bcd4,#673ab7);color:#fff}
+.home__conteudo{width:90%;max-width:50rem}
+.home__titulo{font-size:3rem;margin-bottom:1rem}
+.home__texto{font-size:1.2rem;margin-bottom:2rem}
+.secao{width:85%;max-width:70rem;margin:auto;padding:5rem 0}
+.secao__titulo{text-align:center;font-size:2rem;margin-bottom:2rem}
+.secao__texto{margin-bottom:1rem;text-align:center}
+.rodape{background-color:#181818;color:#fff;text-align:center;padding:2rem 5%}
+@media(max-width:48rem){.cabecalho{flex-direction:column;gap:1rem}.cabecalho__menu{flex-wrap:wrap;justify-content:center;gap:1rem}.home__titulo{font-size:2.3rem}}
+@media(max-width:30rem){.cabecalho{padding:1rem 5%}.cabecalho__menu{flex-direction:column;align-items:center}.home{min-height:75vh}.home__titulo{font-size:1.8rem}.home__texto{font-size:1rem}.secao{width:90%;padding:3rem 0}.secao__titulo{font-size:1.7rem}}
+.home__botao{background-color:#fff;color:#333;padding:.8em 1.5em;border:none;border-radius:.5rem;cursor:pointer;transition:background-color .3s ease;display:inline-block;font-weight:bold}
+.home__botao:hover{background-color:#eee}
+.servicos__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem}
+.servicos__card{padding:2rem;margin-bottom:.5rem;background-color:#fff;border-radius:.7rem;box-shadow:0 .2rem .8rem rgba(0,0,0,.1)}
+.servicos__card-titulo{margin-bottom:1rem;color:#673ab7}
+.depoimentos__lista{display:flex;gap:2rem;flex-wrap:wrap}
+.depoimentos__item{flex:1 1 15rem;background-color:#fff;padding:2rem;border-radius:.7rem;box-shadow:0 .2rem .8rem rgba(0,0,0,.1)}
+.depoimentos__texto{margin-bottom:1rem}
+.contato__container{display:flex;gap:3rem}
+.contato__informacoes,.contato__formulario{flex:1}
+.contato__subtitulo,.contato__texto{margin-bottom:1rem}
+.contato__formulario{display:flex;flex-direction:column}
+.contato__label{margin-top:1rem;margin-bottom:.3rem}
+.contato__campo{width:100%;padding:.8rem;border:.1rem solid #ccc;border-radius:.4rem;font-size:1rem}
+.contato__campo--mensagem{min-height:10rem;resize:vertical}
+.contato__botao{background-color:#673ab7;color:#fff;padding:.9rem;border:none;border-radius:.4rem;cursor:pointer;transition:background-color .3s ease;margin-top:1rem;font-size:1rem}
+.contato__botao:hover{background-color:#512da8}
+@media(max-width:48rem){.contato__container{flex-direction:column}}
+@media(max-width:30rem){.servicos__grid{grid-template-columns:1fr}.depoimentos__lista{flex-direction:column}}
