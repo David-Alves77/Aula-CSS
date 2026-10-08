@@ -1,0 +1,134 @@
+
+@use "variaveis" as v;
+@use "mixins" as m;
+
+// BOTÃO DA HOME
+.home__botao {
+  @include m.botao-padrao(v.$cor-branca);
+
+  display: inline-block;
+  color: v.$cor-texto;
+  padding: 0.8em 1.5em;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #eeeeee;
+  }
+}
+
+// SERVIÇOS
+.servicos {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(15rem, 1fr)
+    );
+    gap: v.$espacamento-medio;
+  }
+
+  &__card {
+    background-color: v.$cor-branca;
+    padding: v.$espacamento-medio;
+    border-radius: v.$borda-card;
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+  }
+
+  &__card-titulo {
+    margin-bottom: v.$espacamento-base;
+    color: v.$cor-primaria;
+  }
+}
+
+// DEPOIMENTOS
+.depoimentos {
+  &__lista {
+    display: flex;
+    gap: v.$espacamento-medio;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 1 1 15rem;
+    background-color: v.$cor-branca;
+    padding: v.$espacamento-medio;
+    border-radius: v.$borda-card;
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+  }
+
+  &__texto {
+    margin-bottom: v.$espacamento-base;
+  }
+}
+
+// CONTATO
+.contato {
+  &__container {
+    display: flex;
+    gap: v.$espacamento-grande;
+  }
+
+  &__informacoes,
+  &__formulario {
+    flex: 1;
+  }
+
+  &__subtitulo,
+  &__texto {
+    margin-bottom: v.$espacamento-base;
+  }
+
+  &__formulario {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    margin-top: v.$espacamento-base;
+    margin-bottom: 0.3rem;
+  }
+
+  &__campo {
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.1rem solid v.$cor-borda;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+
+    &--mensagem {
+      min-height: 10rem;
+      resize: vertical;
+    }
+  }
+
+  &__botao {
+    @include m.botao-padrao();
+
+    margin-top: v.$espacamento-base;
+    padding: 0.9rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+
+    &:hover {
+      background-color: v.$cor-primaria-escura;
+    }
+  }
+}
+
+// RESPONSIVIDADE - TABLETS
+@media (max-width: 48rem) {
+  .contato__container {
+    flex-direction: column;
+  }
+}
+
+// RESPONSIVIDADE - CELULARES
+@media (max-width: 30rem) {
+  .servicos__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .depoimentos__lista {
+    flex-direction: column;
+  }
+}
