@@ -28,10 +28,11 @@
   }
 
   &__card {
-    background-color: v.$cor-branca;
-    padding: v.$espacamento-medio;
-    border-radius: v.$borda-card;
-    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+    @include m.espacamento(2);
+
+  background-color: v.$cor-branca;
+  border-radius: v.$borda-card;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
   }
 
   &__card-titulo {
