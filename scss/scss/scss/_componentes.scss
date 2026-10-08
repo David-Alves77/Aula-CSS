@@ -102,13 +102,13 @@
     }
   }
 
-  &__botao {
-    @include m.botao-padrao();
+  &__card {
+  @include m.espacamento(2);
 
-    margin-top: v.$espacamento-base;
-    padding: 0.9rem;
-    border-radius: 0.4rem;
-    font-size: 1rem;
+  background-color: v.$cor-branca;
+  border-radius: v.$borda-card;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+}
 
     &:hover {
       background-color: v.$cor-primaria-escura;
