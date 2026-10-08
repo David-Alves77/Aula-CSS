@@ -1,0 +1,19 @@
+
+@use "variaveis" as v;
+
+// Mixin para estilizar botões
+@mixin botao-padrao($cor: v.$cor-primaria) {
+  background-color: $cor;
+  color: v.$cor-branca;
+  padding: calc(v.$espacamento-base / 2) v.$espacamento-base;
+  border: none;
+  border-radius: v.$borda-padrao;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+// Mixin para espaçamento
+@mixin espacamento($multiplicador: 1) {
+  padding: v.$espacamento-base * $multiplicador;
+  margin-bottom: calc(v.$espacamento-base / 2);
+}
